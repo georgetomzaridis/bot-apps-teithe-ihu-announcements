@@ -1,4 +1,4 @@
-# botappsteitheannouncements
+# bot-apps-teithe-announcements
 Bot that checks for new announcements on https://apps.it.teithe.gr/ and send them on messenger group chat or user chat.
 
 ![alt text](https://github.com/georgetomzaridis/botappsteitheannouncements/blob/master/images/message_sample.png "Messenger Announcement")
