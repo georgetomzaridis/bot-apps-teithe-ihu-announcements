@@ -4,7 +4,7 @@ Bot that checks for new announcements on https://apps.it.teithe.gr/ and send the
 ![alt text](https://github.com/georgetomzaridis/botappsteitheannouncements/blob/master/images/message_sample.png "Messenger Announcement")
 
 ## Features
-Checks for new nnouncements and if finds one, they will send it to messenger group chat or user chat
+Checks for new announcements and if finds one, they will send it to messenger group chat or user chat
 
 ## Links
 * Requests: https://pypi.org/project/requests/
