@@ -11,6 +11,8 @@ Checks for new announcements and if finds one, they will send it to messenger gr
 * Fbchat: https://pypi.org/project/fbchat/
 * Apps Teithe: https://apps.it.teithe.gr/
 
+## !!WARNING!!
+Please dont remove the file 'count_ann' because the programm use that file to record the latest count of posts and compare it with the api new one.
 
 ## Issues / Questions
 If you have questions or issues dont worry i am happy to help you. Just open an issue here in github or email me
