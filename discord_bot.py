@@ -27,7 +27,7 @@ async def on_ready(self):
 async def on_guild_available(message):
     print("Server available, gathering information :)")
     channel_ann = client.get_channel(1234567890) #Discord Announcements Channel ID
-    channel_debug = client.get_channel(0987654321) #Discord Debug/Logs Channel ID
+    channel_debug = client.get_channel(1234567890) #Discord Debug/Logs Channel ID (Optional)
     try:
         print('Running datetime: ', currentdatetime_string)
         announcements_url = "https://apps.it.teithe.gr/api/announcements/public"
@@ -96,19 +96,19 @@ async def on_guild_available(message):
                 await channel_ann.send(str(message))
                 now = datetime.now()
                 currentdatetime_string2 = now.strftime("%d/%m/%Y %H:%M:%S")
-                await channel_debug.send("Η Ανακοίνωση (" + str(ann_id) + ") [" + str(ann_type) + "] ["+ str(ann_title) + "] στάλθηκε  {"+ str(currentdatetime_string2)+"}")
+                await channel_debug.send("Η Ανακοίνωση (" + str(ann_id) + ") [" + str(ann_type) + "] ["+ str(ann_title) + "] στάλθηκε  {"+ str(currentdatetime_string2)+"}") # Discord Debug/Logs Channel Message Notify (Optional)
 
         else:
             print("Nothing new, all good :)")
             now = datetime.now()
             currentdatetime_string3 = now.strftime("%d/%m/%Y %H:%M:%S")
-            await channel_debug.send("Καμία ανακοίνωση {"+ str(currentdatetime_string3) + "")
+            await channel_debug.send("Καμία ανακοίνωση {"+ str(currentdatetime_string3) + "") # Discord Debug/Logs Channel Message Notify (Optional)
 
     except Exception as e:
         print(str(e))
         now = datetime.now()
         currentdatetime_string3 = now.strftime("%d/%m/%Y %H:%M:%S")
-        await channel_debug.send("Η Ανακοίνωση (" + str(ann_id) + ") [" + str(ann_type) + "] [" + str(ann_title) + "] ΔΕΝ στάλθηκε  {" + str(currentdatetime_string3) + "} \n\n\n "+(str(e) + ""))
+        await channel_debug.send("Η Ανακοίνωση (" + str(ann_id) + ") [" + str(ann_type) + "] [" + str(ann_title) + "] ΔΕΝ στάλθηκε  {" + str(currentdatetime_string3) + "} \n\n\n "+(str(e) + "")) # Discord Debug/Logs Channel Message Notify (Optional)
         logging.exception(str(e))
     sys.exit("Done :)")
 
