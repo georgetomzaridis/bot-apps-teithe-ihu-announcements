@@ -1,10 +1,14 @@
 # bot-apps-teithe-announcements
-Bot that checks for new announcements on https://apps.it.teithe.gr/ and send them on messenger group chat or user chat.
+Bot that checks for new announcements on https://apps.it.teithe.gr/ and send them on messenger group/user or discord group.
 
+# Messenger 
 ![alt text](https://github.com/georgetomzaridis/botappsteitheannouncements/blob/master/images/message_sample.png "Messenger Announcement")
 
+# Discord
+![alt text](https://github.com/georgetomzaridis/botappsteitheannouncements/blob/master/images/discord_sample.png "Messenger Announcement")
+
 ## Features
-Checks for new announcements and if finds one, they will send it to messenger group chat or user chat
+Checks for new announcements and if finds one, they will send it to messenger group/user or discord group.
 
 ## Links
 * Requests: https://pypi.org/project/requests/
