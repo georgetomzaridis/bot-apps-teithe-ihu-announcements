@@ -1,5 +1,5 @@
 # bot-apps-teithe-announcements
-Bot that checks for new announcements on https://apps.it.teithe.gr/ and send them on messenger group/user or discord group.
+Bot that checks for new announcements on https://apps.iee.ihu.gr/ and send them on messenger group/user or discord group.
 
 # Messenger 
 ![alt text](https://github.com/georgetomzaridis/botappsteitheannouncements/blob/master/images/message_sample.png "Messenger Announcement")
@@ -13,7 +13,7 @@ Checks for new announcements and if finds one, they will send it to messenger gr
 ## Links
 * Requests: https://pypi.org/project/requests/
 * Fbchat: https://pypi.org/project/fbchat/
-* Apps Teithe: https://apps.it.teithe.gr/
+* Apps IHU(Teithe): https://apps.iee.ihu.gr/
 
 ## !!WARNING!!
 Please dont remove the file 'count_ann' because the programm use that file to record the latest count of posts and compare it with the api new one.
